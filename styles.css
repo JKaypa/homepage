@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-  
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
@@ -17,13 +17,13 @@ body {
   --border-color: #ff9a0045;
   --text-decoration-color: #ff9a00;
 }
-  
+
 .container {
   margin: 0 auto;
   padding: 0 30px;
   max-width: 900px;
 }
-  
+
 .fh {
   display: flex;
   flex-direction: row;
@@ -69,7 +69,7 @@ body {
   }
 }
 
-  /* Contact info styles */
+/* Contact info styles */
 
 .contact-info__header,
 .contact-info__sub-header {
@@ -79,8 +79,6 @@ body {
 .contact-info__header {
   color: var(--primary-text-color);
   margin-bottom: 15px;
-  text-decoration-color: var(--text-decoration-color);
-  text-decoration-line: underline;
 }
 
 .contact-info__sub-header {
@@ -103,6 +101,21 @@ body {
   text-decoration: none;
   display: flex;
   justify-content: start;
+  position: relative;
+}
+
+a.contact-info__item::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: var(--text-decoration-color);
+  position: absolute;
+  bottom: 0px;
+  transition: all 0.3s linear;
+}
+
+a.contact-info__item:hover::after {
+  width: 100%;
 }
 
 .contact-info__item:not(:last-child) {
@@ -163,8 +176,9 @@ body {
 }
 
 .skills__header {
-  color: var(--secondary-text-color);
-  text-align: center;
+  color: var(--text-decoration-color);
+  text-align: left;
+  font-size: x-large;
   margin-bottom: 15px;
 }
 
@@ -181,7 +195,8 @@ body {
 }
 
 .experiences__header {
-  color: var(--secondary-text-color);
+  color: var(--text-decoration-color);
+  font-size: x-large;
   text-align: left;
   margin-bottom: 20px;
 }
@@ -195,8 +210,6 @@ body {
 
 .experiences__company-header-name {
   color: var(--primary-text-color);
-  text-decoration-color: var(--text-decoration-color);
-  text-decoration-line: underline;
   text-align: left;
   margin-bottom: 20px;
 }
@@ -233,8 +246,9 @@ body {
 }
 
 .additional-info__education-header {
-  color: var(--secondary-text-color);
+  color: var(--text-decoration-color);
   text-align: left;
+  font-size: x-large;
   margin-bottom: 20px;
 }
 
@@ -260,7 +274,8 @@ body {
 }
 
 .additional-info__languages-header {
-  color: var(--secondary-text-color);
+  color: var(--text-decoration-color);
+  font-size: x-large;
   text-align: left;
   margin-bottom: 20px;
 }
