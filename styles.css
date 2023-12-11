@@ -101,6 +101,21 @@ body {
   text-decoration: none;
   display: flex;
   justify-content: start;
+  position: relative;
+}
+
+a.contact-info__item::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: var(--text-decoration-color);
+  position: absolute;
+  bottom: 0px;
+  transition: all 0.3s linear;
+}
+
+a.contact-info__item:hover::after {
+  width: 100%;
 }
 
 .contact-info__item:not(:last-child) {
