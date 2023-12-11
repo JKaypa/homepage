@@ -87,13 +87,29 @@ body {
 }
 
 .contact-info__block {
+  width: 33%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .contact-info__block--center {
+  width: fit-content;
+  display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.tooltip {
+  position: absolute;
+  min-width: 200px;
+  bottom: 150%;
+  background-color: var(--icon-color);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .contact-info__item {
@@ -102,6 +118,11 @@ body {
   display: flex;
   justify-content: start;
   position: relative;
+}
+
+div.contact-info__item:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
 }
 
 a.contact-info__item::after {
