@@ -161,8 +161,9 @@ body {
 }
 
 .skills__header {
-  color: var(--secondary-text-color);
-  text-align: center;
+  color: var(--text-decoration-color);
+  text-align: left;
+  font-size: x-large;
   margin-bottom: 15px;
 }
 
