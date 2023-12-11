@@ -233,8 +233,9 @@ body {
 }
 
 .additional-info__education-header {
-  color: var(--secondary-text-color);
+  color: var(--text-decoration-color);
   text-align: left;
+  font-size: x-large;
   margin-bottom: 20px;
 }
 
