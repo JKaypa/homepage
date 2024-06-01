@@ -302,8 +302,9 @@ a.contact-info__item:hover::after {
 }
 
 .additional-info__education-header {
-  color: var(--secondary-text-color);
+  color: var(--text-decoration-color);
   text-align: left;
+  font-size: x-large;
   margin-bottom: 20px;
 }
 
@@ -315,7 +316,7 @@ a.contact-info__item:hover::after {
 }
 
 .additional-info__education-university-speciality {
-  color: var(--primary-text-color);
+  color: var(--secondary-text-color);
   text-align: left;
   margin-bottom: 10px;
 }
@@ -329,7 +330,8 @@ a.contact-info__item:hover::after {
 }
 
 .additional-info__languages-header {
-  color: var(--secondary-text-color);
+  color: var(--text-decoration-color);
+  font-size: x-large;
   text-align: left;
   margin-bottom: 20px;
 }
