@@ -203,7 +203,6 @@ a.contact-info__item:hover::after {
 }
 
 .intro__icon-wrapper {
-  /* margin-right: 30px; */
   width: 30px;
   display: flex;
   justify-content: center;
@@ -216,7 +215,6 @@ a.contact-info__item:hover::after {
 
 .intro > .intro__icon-wrapper:last-child {
   align-self: self-end;
-  /* position: absolute; */
   right: 0px;
 }
 
@@ -231,9 +229,12 @@ a.contact-info__item:hover::after {
   margin-right: 30px;
 }
 
+/*Skills*/
+
 .skills__header {
-  color: var(--secondary-text-color);
+  color: var(--text-decoration-color);
   text-align: center;
+  font-size: x-large;
   margin-bottom: 15px;
 }
 
