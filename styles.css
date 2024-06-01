@@ -199,19 +199,25 @@ a.contact-info__item:hover::after {
 
 .intro {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
 }
 
 .intro__icon-wrapper {
-  margin-right: 30px;
+  /* margin-right: 30px; */
   width: 30px;
   display: flex;
   justify-content: center;
 }
 
 .intro__icon {
-  height: 1.1428rem;
+  height: 1.5rem;
   vertical-align: text-bottom;
+}
+
+.intro > .intro__icon-wrapper:last-child {
+  align-self: self-end;
+  /* position: absolute; */
+  right: 0px;
 }
 
 .intro__icon path {
@@ -221,6 +227,8 @@ a.contact-info__item:hover::after {
 .intro_text {
   color: var(--secondary-text-color);
   text-align: justify;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .skills__header {
