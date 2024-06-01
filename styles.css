@@ -251,7 +251,8 @@ a.contact-info__item:hover::after {
 }
 
 .experiences__header {
-  color: var(--secondary-text-color);
+  color: var(--text-decoration-color);
+  font-size: x-large;
   text-align: left;
   margin-bottom: 20px;
 }
@@ -264,9 +265,7 @@ a.contact-info__item:hover::after {
 }
 
 .experiences__company-header-name {
-  color: var(--primary-text-color);
-  text-decoration-color: var(--text-decoration-color);
-  text-decoration-line: underline;
+  color: var(--secondary-text-color);
   text-align: left;
   margin-bottom: 20px;
 }
