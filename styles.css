@@ -78,7 +78,7 @@ body {
 }
 
 .contact-info__header {
-  color: var(--primary-text-color);
+  color: var(--text-decoration-color);
   margin-bottom: 15px;
 }
 
